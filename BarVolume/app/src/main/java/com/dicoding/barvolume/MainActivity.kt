@@ -1,5 +1,6 @@
 package com.dicoding.barvolume
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -64,8 +65,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             if (!isEmptyFields) {
-                val result = inputLength.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()
-                tvResult.text = result.toString()
+                val volume = inputLength.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()
+                tvResult.text = volume.toString()
             }
 
         }
