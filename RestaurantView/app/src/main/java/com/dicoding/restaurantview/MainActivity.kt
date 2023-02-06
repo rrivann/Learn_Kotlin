@@ -6,10 +6,17 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.activity.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.dicoding.restaurantview.api.ApiConfig
 import com.dicoding.restaurantview.databinding.ActivityMainBinding
+import com.dicoding.restaurantview.model.CustomerReviewsItem
+import com.dicoding.restaurantview.model.PostReviewResponse
+import com.dicoding.restaurantview.model.Restaurant
+import com.google.android.material.snackbar.Snackbar
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Call
@@ -17,60 +24,50 @@ import retrofit2.Call
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
 
     companion object {
         private const val TAG = "MainActivity"
         private const val RESTAURANT_ID = "uewq1zg2zlskfw1e867"
     }
 
+    private lateinit var activityMainBinding: ActivityMainBinding
+    private val mainViewModel by viewModels<MainViewModel>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
+        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activityMainBinding.root)
 
         supportActionBar?.hide()
+
+        mainViewModel.restaurant.observe(this) { restaurant -> setRestaurantData(restaurant) }
+
         val layoutManager = LinearLayoutManager(this)
-        binding.rvReview.layoutManager = layoutManager
+        activityMainBinding.rvReview.layoutManager = layoutManager
         val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
-        binding.rvReview.addItemDecoration(itemDecoration)
+        activityMainBinding.rvReview.addItemDecoration(itemDecoration)
 
-        findRestaurant()
+        mainViewModel.listReview.observe(this) { consumerReviews -> setReviewData(consumerReviews) }
 
-         binding.btnSend.setOnClickListener { view->
-             postReview(binding.edReview.text.toString())
-             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-             imm.hideSoftInputFromWindow(view.windowToken, 0)
-         }
+        mainViewModel.isLoading.observe(this) { showLoading(it) }
 
-    }
-
-    private fun findRestaurant() {
-        showLoading(true)
-        val client = ApiConfig.getApiService().getRestaurant(RESTAURANT_ID)
-        client.enqueue(object : Callback<RestaurantResponse> {
-            override fun onResponse(
-                call: Call<RestaurantResponse>,
-                response: Response<RestaurantResponse>
-            ) {
-                showLoading(false)
-                if (response.isSuccessful) {
-                    val responseBody = response.body()
-                    if (responseBody != null) {
-                        setRestaurantData(responseBody.restaurant)
-                        setReviewData(responseBody.restaurant?.customerReviews)
-                    }
-                } else {
-                    Log.e(TAG, "onFailure: ${response.message()}")
-                }
+        mainViewModel.snackbarText.observe(
+            this
+        ) {
+            it.getContentIfNoHandled()?.let { snackBarText ->
+                Snackbar.make(window.decorView.rootView, snackBarText, Snackbar.LENGTH_SHORT).show()
             }
+        }
 
-            override fun onFailure(call: Call<RestaurantResponse>, t: Throwable) {
-                showLoading(false)
-                Log.e(TAG, "onFailure: ${t.message}")
-            }
-        })
+        activityMainBinding.btnSend.setOnClickListener { view ->
+            mainViewModel.postReview(activityMainBinding.edReview.text.toString())
+            postReview(activityMainBinding.edReview.text.toString())
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(view.windowToken, 0)
+        }
+
     }
 
     private fun postReview(review: String) {
@@ -89,6 +86,7 @@ class MainActivity : AppCompatActivity() {
                     Log.e(TAG, "onFailure: ${response.message()}")
                 }
             }
+
             override fun onFailure(call: Call<PostReviewResponse>, t: Throwable) {
                 showLoading(false)
                 Log.e(TAG, "onFailure: ${t.message}")
@@ -98,11 +96,11 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setRestaurantData(restaurant: Restaurant?) {
-        binding.tvTitle.text = restaurant?.name
-        binding.tvDescription.text = restaurant?.description
+        activityMainBinding.tvTitle.text = restaurant?.name
+        activityMainBinding.tvDescription.text = restaurant?.description
         Glide.with(this@MainActivity)
             .load("https://restaurant-api.dicoding.dev/images/large/${restaurant?.pictureId}")
-            .into(binding.ivPicture)
+            .into(activityMainBinding.ivPicture)
     }
 
     private fun setReviewData(consumerReviews: List<CustomerReviewsItem>?) {
@@ -116,15 +114,15 @@ class MainActivity : AppCompatActivity() {
             )
         }
         val adapter = ReviewAdapter(listReview)
-        binding.rvReview.adapter = adapter
-        binding.edReview.setText("")
+        activityMainBinding.rvReview.adapter = adapter
+        activityMainBinding.edReview.setText("")
     }
 
     private fun showLoading(isLoading: Boolean) {
         if (isLoading) {
-            binding.progressBar.visibility = View.VISIBLE
+            activityMainBinding.progressBar.visibility = View.VISIBLE
         } else {
-            binding.progressBar.visibility = View.GONE
+            activityMainBinding.progressBar.visibility = View.GONE
         }
     }
 }
