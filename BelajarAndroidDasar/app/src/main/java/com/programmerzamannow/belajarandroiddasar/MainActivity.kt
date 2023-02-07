@@ -1,6 +1,8 @@
 package com.programmerzamannow.belajarandroiddasar
 
 import android.annotation.SuppressLint
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,6 +22,25 @@ class MainActivity : AppCompatActivity() {
         sayHelloTextView = findViewById(R.id.sayHelloTextView)
     }
 
+    private fun checkFingerPrint() {
+        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
+            Log.i("FEATURE", "Feature fingerprint ON")
+        } else {
+            Log.i("FEATURE", "Feature fingerprint OF")
+        }
+    }
+
+    private fun checkPlatformVersion() {
+//        Log.i("SDK", Build.VERSION.SDK_INT.toString())
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            Log.i("SDK", "Disable feature, because version sdk is lower than 31")
+        }
+    }
+
+    private fun printHello(name: String) {
+        Log.i("DEBUG", name)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hello_world)
@@ -29,6 +50,21 @@ class MainActivity : AppCompatActivity() {
         sayHelloTextView.text = resources.getString(R.string.app_name)
 
         sayHelloButton.setOnClickListener {
+
+            val firstName = "Rivan"
+            printHello(firstName)
+
+            checkFingerPrint()
+
+            checkPlatformVersion()
+
+            val json = assets.open("sample.json").bufferedReader().use { it.readText() }
+
+            val rawJson =
+                resources.openRawResource(R.raw.sample).bufferedReader().use { it.readText() }
+
+            Log.i("Assets", json)
+            Log.i("Raw Json", rawJson)
 
 //            resources.getDrawable(R.drawable.banteng, theme)
 

@@ -1,4 +1,4 @@
-package com.programmerzamannow.belajarandroiddasar
+package com.programmerzamannow.batuguntingkertas
 
 import org.junit.Test
 
@@ -13,10 +13,5 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
-    }
-
-    @Test
-    fun testHello() {
-        TODO("Not yet implemented")
     }
 }
