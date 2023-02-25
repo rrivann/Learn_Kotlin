@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43d98c89-4860-4651-8c4d-19646c5a32cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/break_continue.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/enumeration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/expression_statement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/for_loop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/range.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/when_expression.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/control_flow/while_dowhile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/cancel_job.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/channels.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/coroutine_dispatcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/coroutines_builder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/deferred.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/first_coroutines.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/job.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/collections.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/collections_operations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/data_class.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/destructuring_declarations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/map.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/sequences.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data_classes_collections/set.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/fold_drop_take.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/function_inside.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/function_type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/functional_programming.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/high_order_function.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/kotlin_standard_library.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/lambda.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/lambda_receiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/member_references.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/named_default_arguments.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/nullable_receiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/recursion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/scope_function_lambda_argument.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/scope_function_lambda_receiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/slice_distinct_chuncked.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functional_programming/variable_arguments.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/arrays.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/boolean.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/char.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/data_types.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/function.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/if_expression.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/nullable_types.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/numbers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/safe_calls_elvis.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental/string.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_generics/class_generics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_generics/constraint_type_parameter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_generics/declaration_generics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_generics/konsep.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kotlin_generics/variance.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/abstract_class.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/class.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/exception.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/exception_handling.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/extension_properties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/import_package.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/inheritances.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/interfaces.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/object.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/overloading.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/primary_constructor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/properties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/properties_delegation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/secondary_constructor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/utils/math.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/utils/new_package.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/object_oriented_programming/visibility_modifier.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LziSxUEybvxbpZJ5TfyLXa4vh7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/kotlin_fundamental" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.TestKt">
+    <configuration name="Cancel_jobKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.Cancel_jobKt" />
+      <module name="kotlin-starter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.ChannelsKt" />
+      <module name="kotlin-starter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coroutine_dispatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.Coroutine_dispatcherKt" />
+      <module name="kotlin-starter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeferredKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.DeferredKt" />
+      <module name="kotlin-starter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestKt" />
+      <module name="kotlin-starter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.TestKt" />
+        <item itemvalue="Kotlin.ChannelsKt" />
+        <item itemvalue="Kotlin.Coroutine_dispatcherKt" />
+        <item itemvalue="Kotlin.DeferredKt" />
+        <item itemvalue="Kotlin.Cancel_jobKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43d98c89-4860-4651-8c4d-19646c5a32cc" name="Changes" comment="" />
+      <created>1676880315746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676880315746</updated>
+    </task>
+    <servers />
+  </component>
+</project>
